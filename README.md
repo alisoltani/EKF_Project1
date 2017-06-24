@@ -19,5 +19,5 @@ After prediction, if the data is coming from the lidar we use a simple update fu
 The Update and UpdateEKF methods find the error between prediction and measurements, and then call the UpdateKF method which then finishes the Kalman filtering steps. It should be noted that when updating the radar measurements, we need to ensure that since the angle coming from the radar data falls between -pi and pi, our model also falls in that region. This is done by the NormalizeAngle method which chooses the appropriate region.
 
 # Final code and results
-The code for this project is found under src directory, and a video has been captured to see the performance of kalman filtering. The final result is shown here. It can be seen that the falls below the maximum range in the rubric of RMSE <= [.11, .11, 0.52, 0.52].
+The code for this project is found under src directory, and a video has been captured to see the performance of kalman filtering (EKF_test.mp4). The final result is shown here. It can be seen that the falls below the maximum range in the rubric of RMSE <= [.11, .11, 0.52, 0.52].
 ![Alt text](data/EKF.JPG)
