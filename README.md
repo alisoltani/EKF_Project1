@@ -20,4 +20,4 @@ The Update and UpdateEKF methods find the error between prediction and measureme
 
 # Final code and results
 The code for this project is found under src directory, and a video has been captured to see the performance of kalman filtering. The final result is shown here-
-![Alt text](data/EKF.jpg)
+![Alt text](data/EKF.JPG)
