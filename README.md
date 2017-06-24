@@ -5,6 +5,14 @@ This project develops an extended kalman filter to track a simulated driving car
 The process flow used in this project is as follows:
 ![Alt text](data/FusionFlow.png)
 
+## Building
+To build:
+* cd build
+* cmake ..
+* make
+* run ./ExtendedKF
+* start the simulator found from [here](https://github.com/udacity/self-driving-car-sim/releases)
+
 ## Initialization/First measurement
 The code for initlizing the kalman filter is found in the FusionEKF.cpp file, lines 68 - 103. Depending on the type of sensor we get our first measurement from, we initilize and save the timestamp to be able to record \delta t for later calculations.
 
