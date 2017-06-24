@@ -86,14 +86,14 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
     previous_timestamp_ = measurement_pack.timestamp_;
 
     // initalize dt to one for the first data because we don't have a timestamp
-    int dt = 1;
+    int dt = 0.1;
     ekf_.F_ <<   1  ,  0  ,  dt ,  0  ,
                  0  ,  1  ,  0  ,  dt ,
                  0  ,  0  ,  1  ,  0  ,
                  0  ,  0  ,  0  ,  1  ;
     // initial uncertainty, 10 for the position x/y and 1000 for the speed
-    ekf_.P_ <<   10 ,  0  ,  0  ,  0  ,
-                 0  ,  10 ,  0  ,  0  ,
+    ekf_.P_ <<   1  ,  0  ,  0  ,  0  ,
+                 0  ,  1  ,  0  ,  0  ,
                  0  ,  0  , 1000,  0  ,
                  0  ,  0  ,  0  , 1000;
 
