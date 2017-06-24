@@ -38,6 +38,18 @@ private:
   // previous timestamp
   long long previous_timestamp_;
 
+  // variance of laser error
+  double laser_var_;
+
+  // variance of radar error
+  double radar_var_;
+
+  // noise in the x direction
+  int noise_ax_;
+
+  // noise in the y direction
+  int noise_ay_;
+
   // tool object used to compute Jacobian and RMSE
   Tools tools;
   Eigen::MatrixXd R_laser_;
