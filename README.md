@@ -7,7 +7,7 @@ The process flow used in this project is as follows:
 
 ## Building
 To build:
-* cd build
+* mkdir/cd build
 * cmake ..
 * make
 * run ./ExtendedKF
